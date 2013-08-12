@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'teamlog/index.html.haml' do
+describe 'service_activity/index.html.haml' do
   it 'displays the service activity' do
     assign :activity, [
       stub_model(
