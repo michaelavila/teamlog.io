@@ -4,7 +4,7 @@
       %tr
         %td
           %h2= service_activity.service
-          %p= service_activity.message
+          %p= service_activity.payload
           %small
             = time_ago_in_words(service_activity.created_at)
             = " ago"

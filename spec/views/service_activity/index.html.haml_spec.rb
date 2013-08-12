@@ -6,7 +6,7 @@ describe 'service_activity/index.html.haml' do
       stub_model(
         ServiceActivity,
         :service => 'Test Service',
-        :message => 'Test Message',
+        :payload => 'Test Payload',
         :created_at => 1.day.ago,
       )
     ]
@@ -14,7 +14,7 @@ describe 'service_activity/index.html.haml' do
     render
 
     rendered.should have_content('Test Service')
-    rendered.should have_content('Test Message')
+    rendered.should have_content('Test Payload')
     rendered.should have_content('1 day ago')
   end
 end
