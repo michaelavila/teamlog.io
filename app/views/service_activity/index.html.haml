@@ -2,10 +2,4 @@
   %tbody
     - @activity.each do |service_activity|
       %tr
-        %td
-          %h2= service_activity.service
-          %p= service_activity.message
-          %small
-            = time_ago_in_words(service_activity.created_at)
-            = " ago"
-
+        %td= render :partial => service_activity.service, locals: {service_activity: service_activity}

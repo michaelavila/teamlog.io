@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe ServiceActivityController do
-  describe '#indx' do
+  describe '#index' do
     it 'assigns all service activities' do
       ServiceActivity.should_receive(:all).and_return 'does not matter'
 
