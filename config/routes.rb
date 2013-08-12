@@ -1,4 +1,8 @@
 TeamlogIo::Application.routes.draw do
+  # This is the main route for the team. Here they will find all of the
+  # activity their services have reported.
+  get '/:team/', to: 'service_activity#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

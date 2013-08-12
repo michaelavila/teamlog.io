@@ -1,0 +1,2 @@
+class ServiceActivityController < ApplicationController
+end
